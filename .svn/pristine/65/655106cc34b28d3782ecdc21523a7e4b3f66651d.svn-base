@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, WifiAutoToggleActivity!</string>
+    <string name="app_name">WiFi Auto Toggle</string>
+    <string name="no_notes">No locations saved.</string>
+    <string name="yes">Yes</string>
+    <string name="correct_loc">Is this location correct?</string>
+    <string name="no">No</string>
+    <string name="edit_details">Edit Location Details</string>
+    <string name="zip">Zip</string>
+    <string name="street">Street (Do not include apt/unit)</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="browse">Browse</string>
+    <string name="instruct5">Enter address or select contact:</string>
+    <string name="divider">Divider between Settings and App</string>
+    <string name="loading">Loading...</string>
+    <string name="instruct1">Store your frequent locations in this application. Within proximity to these locations, WiFi is automatically enabled. Leaving the area disables WiFi to save battery.</string>
+    <string name="instruct4">Choose the Manage tab to edit, enable/disable, and remove stored locations.</string>
+    <string name="instruct3">Click the button below to use GPS services to find and store your current location, or use the Manual tab to enter an address.</string>
+    <string name="instruct2">Within proximity to these locations, WiFi is automatically enabled. Leaving the area disables WiFi to save battery.</string>
+    <string name="button_auto">Obtain GPS Location</string>
+    <string name="button_delete">Delete</string>
+    <string name="enabled">Enabled</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_disable">Disable</string>
+    <string name="button_close">Close</string>
+    <string name="disabled">Disabled</string>
+    <string name="button_enable">Enable</string>
+    <string name="button_rename">Rename</string>
+    <string name="title_manual">Manual Location Entry</string>
+    <string name="title_manage">Manage Locations</string>
+    <string name="cd_browse">Icon indicating contact selection</string>
+    <string name="instruct7">Visit http://market.nolnoch.net for more information regarding this product.</string>
+    <string name="instruct6">Press the button again (now labeled Stop Service) at any time to disable Wifi Auto Toggle\'s location services.</string>
+    <string name="instruct8">Remember to press the Start Service button once you\'ve added a location to begin the location algorithm.</string>
+</resources>

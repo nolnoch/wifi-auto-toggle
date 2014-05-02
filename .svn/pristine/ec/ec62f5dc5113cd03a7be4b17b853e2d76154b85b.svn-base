@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maptray"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/instruct6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="18dp"
+        android:text="@string/correct_loc"
+        android:textColor="#00b595"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/buttbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/instruct6"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/buttyes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="yesClick"
+            android:text="@string/yes"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttno"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:onClick="noClick"
+            android:text="@string/no"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:apiKey="0ByrNl_oKZ20rgX-96M4s3ymB6TJ_sxjTz1skDQ"
+        android:clickable="true"
+        android:layout_below="@id/buttbox" />
+
+</RelativeLayout>

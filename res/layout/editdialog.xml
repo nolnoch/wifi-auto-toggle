@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maptray"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/instruct6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/edit_details"
+        android:textColor="#00b595"
+        android:textSize="24sp" />
+    
+    <TextView
+        android:id="@+id/showlabel"
+        style="@style/EditFont"
+        android:text=""
+        android:layout_below="@id/instruct6" />
+    <TextView
+        android:id="@+id/showlat"
+        style="@style/EditFont"
+        android:text=""
+        android:layout_below="@id/showlabel" />
+    <TextView
+        android:id="@+id/showlon"
+        style="@style/EditFont"
+        android:text=""
+        android:layout_below="@id/showlat" />
+    <TextView
+        android:id="@+id/showstatus"
+        style="@style/EditFont"
+        android:text=""
+        android:layout_below="@id/showlon" />
+
+    <LinearLayout
+        android:id="@+id/buttbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/showstatus"
+        android:padding="24dp" >
+
+        <Button
+            android:id="@+id/buttedit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:onClick="editClick"
+            android:text="@string/button_rename"
+            android:layout_weight="1" />
+        
+        <Button
+            android:id="@+id/buttstatus"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:onClick="statusClick"
+            android:text="@string/button_enable"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttdelete"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:onClick="deleteClick"
+            android:text="@string/button_delete"
+            android:layout_weight="1" />
+        
+        <Button
+            android:id="@+id/buttclose"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:onClick="closeClick"
+            android:text="@string/button_close"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:apiKey="0W-2hseHSEh-ZWpXQ6nYyfYE5LTs1AFiEvchFLQ"
+        android:clickable="true"
+        android:layout_below="@id/buttbox" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollbox2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wat_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#00b595"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/title_manual" />
+
+        <TextView
+            android:id="@+id/instruct5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@id/title2"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/instruct5" />
+        
+        <ImageButton 
+            android:id="@+id/buttBrowse"
+            android:contentDescription="@string/cd_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="2dp"
+            android:maxHeight="12dp"
+            android:src="@drawable/sym_contact_card"
+            android:onClick="importContactInfo" />
+            
+        <EditText
+            android:id="@+id/streetbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instruct5"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/street"
+            android:inputType="textPostalAddress" />
+
+        <LinearLayout
+            android:id="@+id/table1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/streetbox"
+            android:paddingTop="8dp"
+            android:weightSum="1.0" >
+
+            <EditText
+                android:id="@+id/citybox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".80"
+                android:background="@android:drawable/editbox_background"
+                android:hint="@string/city"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/statebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".05"
+                android:background="@android:drawable/editbox_background"
+                android:hint="@string/state"
+                android:inputType="textCapCharacters"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/zipbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:background="@android:drawable/editbox_background"
+                android:hint="@string/zip"
+                android:inputType="number"
+                android:maxLength="5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/table1"
+            android:layout_marginTop="17dp"
+            android:text="@string/button_submit"
+        	android:onClick="verify" />
+        
+        <TextView 
+            android:id="@+id/testview"
+            style="@style/InstructFont"
+            android:layout_below="@id/submit"
+            android:text="" />"
+        
+    </RelativeLayout>
+
+</ScrollView>
